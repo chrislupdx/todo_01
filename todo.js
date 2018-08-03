@@ -29,14 +29,13 @@ todoInput.addEventListener('keypress', function(event){
     let checkmark = document.createElement('button')
     checkmark.innerText = '✓'
     todo.appendChild(checkmark)
+
     checkmark.addEventListener('click', function(event){
-  let toggle = document.getElementById("stored"); //i'm pretty sure this works
-  toggle.classList.toggle("strikethrough");
+      let toggle = event.target.parentElement; //80%surethetargetisTodo
+      console.log(toggle)
+      toggle.classList.toggle("strikethrough");
     })
   }
 })
-//I'm pretty sure we're supposed to selecting either blank or stored, or it's goes into list.
-//create a css class structure to toggle to begin with.  I fucking hope it doesn't have to have another doc
-
-// mark an item as finished.
-// toggle class whenever button is pressed
+//right now the check markes forcefully toggle all of the items, we neeed to individute each entry
+//can we dynamically generate IDs with javascript for our list entries?
