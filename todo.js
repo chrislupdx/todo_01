@@ -17,5 +17,24 @@ todoInput.addEventListener('keypress', function(event){
     todo.appendChild(todoText);
     let parentDiv = document.querySelector('#stored')
     parentDiv.appendChild(todo)
+
+    let removeBtn = document.createElement('button')
+    removeBtn.innerText = 'x'
+    todo.appendChild(removeBtn)
+    removeBtn.addEventListener('click', function(event){
+      parentDiv.removeChild(todo);
+    })
+
+    let checkmark = document.createElement('button')
+    checkmark.innerText = '✓'
+    todo.appendChild(checkmark)
+    checkmark.addEventListener('click', function(event){
+      parentDiv.removeChild(todo); //instead lets have it toggle a class
+    })
   }
 })
+
+//find where the checkmark is generated
+
+// mark an item as finished.
+// toggle class whenever button is pressed
