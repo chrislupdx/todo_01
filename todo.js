@@ -8,6 +8,7 @@
 // }
 // let element = document.createElement('div1');
 
+
 let todoList = []
 let todoInput = document.querySelector('#goes_into_list')
 todoInput.addEventListener('keypress', function(event){
@@ -29,12 +30,13 @@ todoInput.addEventListener('keypress', function(event){
     checkmark.innerText = '✓'
     todo.appendChild(checkmark)
     checkmark.addEventListener('click', function(event){
-      parentDiv.removeChild(todo); //instead lets have it toggle a class
+  let toggle = document.getElementById("stored"); //i'm pretty sure this works
+  toggle.classList.toggle("strikethrough");
     })
   }
 })
-
-//find where the checkmark is generated
+//I'm pretty sure we're supposed to selecting either blank or stored, or it's goes into list.
+//create a css class structure to toggle to begin with.  I fucking hope it doesn't have to have another doc
 
 // mark an item as finished.
 // toggle class whenever button is pressed
