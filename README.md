@@ -4,24 +4,19 @@
 
 ## Description
 A Todolist
-  - Pipeline, and Dashboard visualizations of CRM to measure momentum/churn.  
-  - Relevant inputs for prospects, listings and, relevant applications.  
-  - A Cover Letter template editor.
-  - View Job listings in-app
-
+  - create entries
+  - check off entries when finished
 ## Reach Goals 
-- Users can create accounts and access LFW via [https://curiouscoyote.pythonanywhere.com]
-- User can use in-app job lead aggregator to find new listings
-- User can send pixel-tracked emails through LFW and track recipient behavior
+- User-accounts and storage
  
 ## Setup and Installation (for Developers)
-1. Clone this repo [https://github.com/chrislupdx/lfw]
-2. Install Django 2.0
-3. Run locally!
+1. Clone this repo [https://github.com/chrislupdx/todo_in_js]
+2. Run in browser!
 
 ## Technologies Used
-* Django 2.0
-* Materialize 1.0
+* Jquery
+* Javascript
+* HTML
 
 ## Support and contact details
 
